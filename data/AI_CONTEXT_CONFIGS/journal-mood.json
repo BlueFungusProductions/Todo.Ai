@@ -1,0 +1,7 @@
+
+
+{
+  "context_id": "journal-mood",
+  "description": "Extract key insights from the user's mood reflection and suggest a question to deepen self-awareness.",
+  "default_prompt": "What are the key takeaways or ideas in this entry? Summarize them and end with a thought-provoking question."
+}

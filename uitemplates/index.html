@@ -1,0 +1,25 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <title>Todo.Ai Server</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    h1 { color: #333; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 0.5em 0; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Todo.Ai</h1>
+  <p>This server is live. You can:</p>
+  <ul>
+    {% for file in shortcut_files %}
+      <li><a href="/siri/{{ file }}">{{ file }}</a></li>
+    {% endfor %}
+    <li>POST journal entries to <code>/journal</code></li>
+  </ul>
+</body>
+</html>

@@ -12,3 +12,5 @@ build/
 
 # VSCode
 .vscode/
+tests/tmp/journal_test_output.log
+data/JOURNAL/*.md

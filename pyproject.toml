@@ -1,0 +1,10 @@
+[project]
+name = "todo_ai"
+version = "0.1.0"
+description = "Human-aligned AI system for team knowledge and decision support"
+authors = [{ name = "Aron Sogor" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["server"]

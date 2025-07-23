@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone='no'?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+  <name replace-wildcards="yes">AITractor Journal</name>
+  <service>
+    <type>_http._tcp</type>
+    <port>5000</port>
+    <txt-record>path=/journal</txt-record>
+    <txt-record>desc=Voice journal POST endpoint</txt-record>
+    <txt-record>shortcut=/siri/install</txt-record>
+    <txt-record>auth=X-API-Key</txt-record>
+  </service>
+</service-group>

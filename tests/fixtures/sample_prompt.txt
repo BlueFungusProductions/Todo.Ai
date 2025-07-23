@@ -1,0 +1,15 @@
+## Journal
+
+I am glad to get started with this project I am really excited about this. Mom worries I am pushing too hard.
+
+## Mood
+
+Today I felt unusually scattered and low on energy. Despite trying to focus, my thoughts kept drifting.
+
+## Journal Update
+:::Todo.Ai prompt="What was the emotional tone of this entry?" context_id="journal-entry" md="##Journal"
+:::
+
+## Mode Assesment
+:::Todo.Ai prompt="What are the key takeaways or ideas in this entry? Summarize them and end with a thought-provoking question to explore further." context_id="journal-mood" md="##Mood"
+:::

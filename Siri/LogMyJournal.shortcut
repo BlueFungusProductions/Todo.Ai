@@ -1,0 +1,50 @@
+{
+  "actions": [
+    {
+      "actionIdentifier": "is.workflow.actions.dictatetext",
+      "parameters": {
+        "Prompt": "What would you like to log?",
+        "UUID": "entryTextInput",
+        "VariableName": "EntryText"
+      }
+    },
+    {
+      "actionIdentifier": "is.workflow.actions.ask",
+      "parameters": {
+        "Prompt": "How are you feeling?",
+        "InputType": "Text",
+        "UUID": "moodInput",
+        "VariableName": "Mood"
+      }
+    },
+    {
+      "actionIdentifier": "is.workflow.actions.getcontents",
+      "parameters": {
+        "URL": "http://AITractor.local:5000/journal",
+        "Method": "POST",
+        "Headers": {
+          "Content-Type": "application/json"
+        },
+        "RequestBody": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Mood: [[MagicVariable:Mood]]"
+            },
+            {
+              "role": "user",
+              "content": "[[MagicVariable:EntryText]]"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "actionIdentifier": "is.workflow.actions.showresult"
+    }
+  ],
+  "name": "Log My Journal",
+  "shortcutIdentifier": "com.todoai.logmyjournal",
+  "clientRelease": "iOS",
+  "version": 1
+}

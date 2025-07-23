@@ -1,0 +1,7 @@
+
+
+{
+  "context_id": "journal-entry",
+  "description": "Analyze the overall emotional tone and themes of the journal entry.",
+  "default_prompt": "What emotions or states of mind does this entry reflect? Summarize the tone and major themes in a short paragraph."
+}
